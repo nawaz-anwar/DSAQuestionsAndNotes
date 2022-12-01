@@ -97,6 +97,22 @@ public class addFirst {
         System.out.println(temp);
     }
 
+    public void reverse(){
+        Node prev = null;
+        Node curr = head;
+        Node next;
+
+        while (curr!=null){
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+
+        }
+
+        head = prev;
+    }
+
     public static void main(String[] args) {
 
         //LinkedList linkedList = new LinkedList();
@@ -109,11 +125,6 @@ public class addFirst {
         add.addLast(4);
         add.addMiddle(4,5);
         add.addMiddle(5,6);
-        add.printAll();
-        add.sizeLL();
-        add.removeFirst(1);
-        add.printAll();
-        add.removeLast(6);
         add.printAll();
 
     }

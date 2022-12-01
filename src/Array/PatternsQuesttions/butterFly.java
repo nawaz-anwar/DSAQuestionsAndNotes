@@ -27,5 +27,21 @@ public class butterFly {
             }
             System.out.println();
         }
+
+        System.out.println();
+
+        int a = 4;
+
+        for (int i=1; i<=a; i++){
+
+            if (i<a-i){
+                System.out.println(" ");
+            }
+            if (i<a){
+                System.out.println("*");
+            }
+            //System.out.println();
+
+        }
     }
 }
